@@ -14,10 +14,11 @@ def main():
 				else:
 					words[filtered_word] = 1
 
-		words = dict(sorted(words.items(), key = lambda item: (-item[1], item[0])))
+	words = dict(sorted(words.items(), key = lambda item: (-item[1], item[0])))
 
-		for item in list(words.items())[:5]:
-			print(f'{item[0]}: {item[1]}')
+	print('')
+	for item in list(words.items())[:5]:
+		print(f'{item[0]}: {item[1]}')
 
 if __name__ == "__main__":
 	main()
