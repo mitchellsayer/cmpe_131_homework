@@ -15,14 +15,9 @@ def main():
 
 		words = dict(sorted(words.items(), key = lambda item: item[1], reverse=True))
 		top_five = list(words.items())[:5]
-		top_five = dict(sorted(top_five, key = lambda item: item[0]))
-		print_count = 0
 
-		for item in top_five.items():
+		for item in top_five:
 			print(f'{item[0]}: {item[1]}')
-			print_count += 1
-
-		print(top_five)
 
 if __name__ == "__main__":
 	main()
